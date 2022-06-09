@@ -1,1 +1,1 @@
-Game bomberman làm với dương
+Game bomberman
