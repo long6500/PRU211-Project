@@ -1,0 +1,686 @@
+fileFormatVersion: 2
+guid: 5ec4fe531447b1d45a38cc6ddc85c6b5
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Baron Bombano cut_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 60.666664
+        width: 20
+        height: 30.333334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a5da301db381504f8b6de95811c5d28
+      internalID: 1995660289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baron Bombano cut_1
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 60.666664
+        width: 20
+        height: 30.333334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0baba995bfa44bc4d8a55c7e90c15fa4
+      internalID: -856994669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baron Bombano cut_2
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 60.666664
+        width: 20
+        height: 30.333334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea3368aedd9287142a926374d2e10310
+      internalID: 1060281700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baron Bombano cut_3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 60.666664
+        width: 20
+        height: 30.333334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af5961058dfc9b4448080095e56c692f
+      internalID: -21000720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baron Bombano cut_4
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 60.666664
+        width: 20
+        height: 30.333334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dac1e6cbc5a42b64fba0c0673a2a43a3
+      internalID: 528598517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baron Bombano cut_5
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 60.666664
+        width: 20
+        height: 30.333334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 514c5b336a6a1bc4992e4d1b6d0bb106
+      internalID: -313659780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baron Bombano cut_6
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 60.666664
+        width: 20
+        height: 30.333334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17eb920e9a2c84745938200388312689
+      internalID: -567344427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baron Bombano cut_7
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 60.666664
+        width: 20
+        height: 30.333334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3226e158cada73e41a73a8d22e4e207f
+      internalID: -1544614508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baron Bombano cut_8
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 30.666666
+        width: 20
+        height: 30.333334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c0ce5af36fcaa24aabc39671c6a4063
+      internalID: -598461492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baron Bombano cut_9
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 30.666666
+        width: 20
+        height: 30.333334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a60ac2d859e32d4bbb7ea8701463273
+      internalID: 789177046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baron Bombano cut_10
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 30.666666
+        width: 20
+        height: 30.333334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecf0dc5771907b846a7e8f4ccc146b5f
+      internalID: 703747331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baron Bombano cut_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 30.666666
+        width: 20
+        height: 30.333334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dc08f5d210a02c48a74a18502829eb7
+      internalID: -1108824925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baron Bombano cut_12
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 30.666666
+        width: 20
+        height: 30.333334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3acbe71ae3ee8514dbb75f469af78bf2
+      internalID: -511720175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baron Bombano cut_13
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 30.666666
+        width: 20
+        height: 30.333334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98be72b3b5e44554192a3ad8916c3762
+      internalID: -1600251774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baron Bombano cut_14
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 30.666666
+        width: 20
+        height: 30.333334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5738d64161d276f4c806ab614e70eae4
+      internalID: 965109423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baron Bombano cut_15
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 30.666666
+        width: 20
+        height: 30.333334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1f9aa7d75e1b864d846b6a49864610d
+      internalID: 919577128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baron Bombano cut_16
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 0.66666603
+        width: 20
+        height: 30.333334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 729b87e77bae821479d074b1bb33fa78
+      internalID: 165526388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baron Bombano cut_17
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0.66666603
+        width: 20
+        height: 30.333334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a77ab638a8a84ed40afbd8fadc4e22a9
+      internalID: 472996949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baron Bombano cut_18
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 0.66666603
+        width: 20
+        height: 30.333334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a59ff08e3f68cc144904302f1a14775d
+      internalID: 1922418564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baron Bombano cut_19
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0.66666603
+        width: 20
+        height: 30.333334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c9911def93fc0a4d895af23e360ffcd
+      internalID: -1302494430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baron Bombano cut_20
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 0.66666603
+        width: 20
+        height: 30.333334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bba02d927cd73c44986f3dd7ca497380
+      internalID: 1926056753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baron Bombano cut_21
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 0.66666603
+        width: 20
+        height: 30.333334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a81d256a75ffef24fad28c799be03a00
+      internalID: -1512160289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baron Bombano cut_22
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 0.66666603
+        width: 20
+        height: 30.333334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9dba31f0153ce445953a1304407e39d
+      internalID: -1191629877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baron Bombano cut_23
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0.66666603
+        width: 20
+        height: 30.333334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4958f2a87f3b09349b63a3306fdd6a03
+      internalID: -948256800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Baron Bombano cut_16: 165526388
+      Baron Bombano cut_6: -567344427
+      Baron Bombano cut_19: -1302494430
+      Baron Bombano cut_9: 789177046
+      Baron Bombano cut_12: -511720175
+      Baron Bombano cut_4: 528598517
+      Baron Bombano cut_14: 965109423
+      Baron Bombano cut_8: -598461492
+      Baron Bombano cut_2: 1060281700
+      Baron Bombano cut_0: 1995660289
+      Baron Bombano cut_23: -948256800
+      Baron Bombano cut_13: -1600251774
+      Baron Bombano cut_7: -1544614508
+      Baron Bombano cut_18: 1922418564
+      Baron Bombano cut_17: 472996949
+      Baron Bombano cut_3: -21000720
+      Baron Bombano cut_15: 919577128
+      Baron Bombano cut_1: -856994669
+      Baron Bombano cut_10: 703747331
+      Baron Bombano cut_20: 1926056753
+      Baron Bombano cut_11: -1108824925
+      Baron Bombano cut_21: -1512160289
+      Baron Bombano cut_5: -313659780
+      Baron Bombano cut_22: -1191629877
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
