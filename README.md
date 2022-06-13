@@ -1,2 +1,1 @@
-# secret-project
-bomberman làm với duy
+Game bomberman
