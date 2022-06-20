@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 601643142530027145}
   - component: {fileID: 601643142530027147}
   - component: {fileID: 601643142530027144}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 601643142530027150}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: -1203608655, guid: ed5dc6ec7804f6f4e832b116f0732b88, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aeb71b18901f6f84a8823bf9543e7ae9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idleSprite: {fileID: 0}
+  idleSprite: {fileID: -1203608655, guid: ed5dc6ec7804f6f4e832b116f0732b88, type: 3}
   animationSprites:
   - {fileID: -1203608655, guid: ed5dc6ec7804f6f4e832b116f0732b88, type: 3}
   - {fileID: 1105075800, guid: ed5dc6ec7804f6f4e832b116f0732b88, type: 3}
@@ -120,7 +120,7 @@ GameObject:
   - component: {fileID: 601643142573317642}
   - component: {fileID: 601643142573317636}
   - component: {fileID: 601643142573317637}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,7 +149,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 601643142573317643}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -182,7 +182,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: -394966667, guid: ed5dc6ec7804f6f4e832b116f0732b88, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -206,7 +206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aeb71b18901f6f84a8823bf9543e7ae9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idleSprite: {fileID: 0}
+  idleSprite: {fileID: -394966667, guid: ed5dc6ec7804f6f4e832b116f0732b88, type: 3}
   animationSprites:
   - {fileID: -394966667, guid: ed5dc6ec7804f6f4e832b116f0732b88, type: 3}
   - {fileID: 1777389544, guid: ed5dc6ec7804f6f4e832b116f0732b88, type: 3}
@@ -229,7 +229,7 @@ GameObject:
   - component: {fileID: 601643142911029456}
   - component: {fileID: 601643142911029458}
   - component: {fileID: 601643142911029459}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -291,7 +291,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 1553635131, guid: ed5dc6ec7804f6f4e832b116f0732b88, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -310,12 +310,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 601643142911029457}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aeb71b18901f6f84a8823bf9543e7ae9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idleSprite: {fileID: 0}
+  idleSprite: {fileID: 1553635131, guid: ed5dc6ec7804f6f4e832b116f0732b88, type: 3}
   animationSprites:
   - {fileID: 1553635131, guid: ed5dc6ec7804f6f4e832b116f0732b88, type: 3}
   - {fileID: -1814031197, guid: ed5dc6ec7804f6f4e832b116f0732b88, type: 3}
@@ -337,7 +337,8 @@ GameObject:
   m_Component:
   - component: {fileID: 601643143062607939}
   - component: {fileID: 601643143062607938}
-  m_Layer: 0
+  - component: {fileID: 1222769880}
+  m_Layer: 8
   m_Name: Explosion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -388,3 +389,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.25, y: 0.25}
   m_EdgeRadius: 0
+--- !u!114 &1222769880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601643143062607936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 584d1751cc74afe44950a280a025e9be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  start: {fileID: 601643142911029459}
+  middle: {fileID: 601643142530027144}
+  end: {fileID: 601643142573317637}
