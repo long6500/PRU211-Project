@@ -1,0 +1,1306 @@
+fileFormatVersion: 2
+guid: 4ed7d4ca7d8a87a489813d000ec404b7
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 84
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5e8d30eeab575a4caa5e0a3cccd493a
+      internalID: -211165379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_1
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 85
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1975e5b3c662b404da72ad6d56e2f132
+      internalID: -98049803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_2
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 85
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3928985d080b33489f10cdc1b4f543a
+      internalID: -1571280864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_3
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 83
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12008a623a4909d40a173ac12d0a42fe
+      internalID: 43972172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 83
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e756ed64c4b396740b2f52b1121542c2
+      internalID: -441761461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_5
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 83
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41157017778ed1645944120092813554
+      internalID: 1813786355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_6
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 83
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1287e179dcbf00c4d8a306e4b7dd40f8
+      internalID: 624849394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_7
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 84
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab8f3fa31c5797d4d8602130f28ef42e
+      internalID: 1433020541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_8
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 85
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97950715e9b2cc14da6097d68f5a804a
+      internalID: 1245447250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_9
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 86
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a729d8c0a91df04dab7d0461a98a777
+      internalID: 1026258280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_10
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 84
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6f3651facf86964eb15aef577b8ffd4
+      internalID: -609517800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_11
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 85
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dfb8b55dd3465f4c84657bc78b40dc6
+      internalID: -296056228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_12
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 85
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63ef304400ded0f4ab0faac47e3af7d7
+      internalID: -1880826229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_13
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 84
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6a1100b4f914544eb457907869ccf76
+      internalID: 1324723228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_14
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 84
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ad905f7f9ebaa44db52151e557a2e48
+      internalID: 531182947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_15
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 84
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6cd1e30fee99be49b1f5dcb1738a0e6
+      internalID: -1641583724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_23
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 68
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a6118f92c8cf8043a1373d7958877a4
+      internalID: 314295921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_24
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 68
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96e44a3729b33c74d9d7d15648288ff1
+      internalID: -1329662646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_25
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 68
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcf762b297aa6844db367a5f57477885
+      internalID: -85549742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_26
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 68
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1616dde7f72bd4648a371b126b28ffe0
+      internalID: -215918612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_27
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 51
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6f2a5ad961aa6e4e850f6aa715e7f38
+      internalID: -918644988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_28
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 51
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cc74ac171f8f834a90b33b457151689
+      internalID: -1264233955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_29
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 51
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2705d125f950e14c8c3800d69eb7832
+      internalID: -836283882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_30
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 51
+        width: 4
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a5d854aa164b2348ad5a3fa18180342
+      internalID: 1858773993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 34
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f37ec44b3a0c1445bd63cce124c2291
+      internalID: -1865879766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_32
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 34
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b9a261c889ec1d429231d935fcbd145
+      internalID: 1395558127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_33
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 34
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c5226f61a628d74ab0b25d858f3e9fd
+      internalID: 451247940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_34
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 34
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28247191f6a4be945993cbb66021bde7
+      internalID: 365912594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_35
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 34
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e8659d396b72d246bc0814769cc7fcd
+      internalID: 223269242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_36
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 36
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f2d1e610e91b2a4ea7f1347d857ef8e
+      internalID: -230738005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_37
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 33
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfa2b18735c7bc94cada8937958009b6
+      internalID: -360411377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_38
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 36
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d6f80b2cd7caa04bb40adc3d12f43e5
+      internalID: 1122099376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_39
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 36
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5092edacff69b94da955d7136381d92
+      internalID: 426832432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_40
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 38
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16aaac6c801be3e48b870a014dce64bd
+      internalID: -903801071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_41
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 38
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9962c398f7652d34fb35f484b9b23144
+      internalID: 1565933554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_42
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 34
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 365c76b9a4dc98f45ade97a7e5f5cd81
+      internalID: -1332336254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_43
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 38
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd7947916655e4f4cb2cef447173e028
+      internalID: -248174530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_44
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 38
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44907d12b634f3d4d871e97a02835ace
+      internalID: -446225626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_45
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 40
+        width: 10
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e419c6e020f559941adda1a6f20957af
+      internalID: 966512302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_46
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 34
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 363dedbc1044c064fbf2ef3f98b4fca6
+      internalID: 925282484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_47
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 40
+        width: 10
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0c2eb496a654624d90527b5e836dd0e
+      internalID: 559570407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_48
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 17
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de71f00c1bc07df4e8bd2b0d77bd85a8
+      internalID: 1561473833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_49
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 17
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0b6d6db2d4e73044874e23e48c37ea4
+      internalID: 645250945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_50
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 17
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04ab49637e4638d48ab5b12c755dc498
+      internalID: 2114290144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_51
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 17
+        width: 4
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e84849fd31d83340845b913df838cac
+      internalID: -1106960501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_52
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b27cf3a895cdc4aa93872fa1826450
+      internalID: -1342451457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_53
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 1
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5feae1727136c454089e8f53293d512c
+      internalID: -1833963068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_54
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 2
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c8f845dfff90564da8a411bd7120433
+      internalID: -1172091615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_55
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 6
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4058da74ac31417458a264ee9b97209b
+      internalID: 266382654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_16
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 36
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edb09edbe2dcfa347b29442db73189e9
+      internalID: 1479627346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_17
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 40
+        width: 16
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e9072ab7ed05c14c9638a9bf2fc5750
+      internalID: -1532354939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn - Saturn Bomberman - Bombs and Explosions_18
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 40
+        width: 16
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1f5ba6acf93ff04da4e7351bc47e7a9
+      internalID: 373160059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Saturn - Saturn Bomberman - Bombs and Explosions_8: 1245447250
+      Saturn - Saturn Bomberman - Bombs and Explosions_33: 451247940
+      Saturn - Saturn Bomberman - Bombs and Explosions_12: -1880826229
+      Saturn - Saturn Bomberman - Bombs and Explosions_4: -441761461
+      Saturn - Saturn Bomberman - Bombs and Explosions_45: 966512302
+      Saturn - Saturn Bomberman - Bombs and Explosions_0: -211165379
+      Saturn - Saturn Bomberman - Bombs and Explosions_31: -1865879766
+      Saturn - Saturn Bomberman - Bombs and Explosions_46: 925282484
+      Saturn - Saturn Bomberman - Bombs and Explosions_24: -1329662646
+      Saturn - Saturn Bomberman - Bombs and Explosions_30: 1858773993
+      Saturn - Saturn Bomberman - Bombs and Explosions_37: -360411377
+      Saturn - Saturn Bomberman - Bombs and Explosions_10: -609517800
+      Saturn - Saturn Bomberman - Bombs and Explosions_51: -1106960501
+      Saturn - Saturn Bomberman - Bombs and Explosions_48: 1561473833
+      Saturn - Saturn Bomberman - Bombs and Explosions_34: 365912594
+      Saturn - Saturn Bomberman - Bombs and Explosions_38: 1122099376
+      Saturn - Saturn Bomberman - Bombs and Explosions_2: -1571280864
+      Saturn - Saturn Bomberman - Bombs and Explosions_29: -836283882
+      Saturn - Saturn Bomberman - Bombs and Explosions_41: 1565933554
+      Saturn - Saturn Bomberman - Bombs and Explosions_39: 426832432
+      Saturn - Saturn Bomberman - Bombs and Explosions_26: -215918612
+      Saturn - Saturn Bomberman - Bombs and Explosions_27: -918644988
+      Saturn - Saturn Bomberman - Bombs and Explosions_50: 2114290144
+      Saturn - Saturn Bomberman - Bombs and Explosions_21: -2045008063
+      Saturn - Saturn Bomberman - Bombs and Explosions_32: 1395558127
+      Saturn - Saturn Bomberman - Bombs and Explosions_1: -98049803
+      Saturn - Saturn Bomberman - Bombs and Explosions_3: 43972172
+      Saturn - Saturn Bomberman - Bombs and Explosions_5: 1813786355
+      Saturn - Saturn Bomberman - Bombs and Explosions_22: 1609619304
+      Saturn - Saturn Bomberman - Bombs and Explosions_42: -1332336254
+      Saturn - Saturn Bomberman - Bombs and Explosions_23: 314295921
+      Saturn - Saturn Bomberman - Bombs and Explosions_52: -1342451457
+      Saturn - Saturn Bomberman - Bombs and Explosions_28: -1264233955
+      Saturn - Saturn Bomberman - Bombs and Explosions_53: -1833963068
+      Saturn - Saturn Bomberman - Bombs and Explosions_40: -903801071
+      Saturn - Saturn Bomberman - Bombs and Explosions_14: 531182947
+      Saturn - Saturn Bomberman - Bombs and Explosions_35: 223269242
+      Saturn - Saturn Bomberman - Bombs and Explosions_19: -143679585
+      Saturn - Saturn Bomberman - Bombs and Explosions_43: -248174530
+      Saturn - Saturn Bomberman - Bombs and Explosions_9: 1026258280
+      Saturn - Saturn Bomberman - Bombs and Explosions_15: -1641583724
+      Saturn - Saturn Bomberman - Bombs and Explosions_49: 645250945
+      Saturn - Saturn Bomberman - Bombs and Explosions_18: 373160059
+      Saturn - Saturn Bomberman - Bombs and Explosions_54: -1172091615
+      Saturn - Saturn Bomberman - Bombs and Explosions_55: 266382654
+      Saturn - Saturn Bomberman - Bombs and Explosions_7: 1433020541
+      Saturn - Saturn Bomberman - Bombs and Explosions_11: -296056228
+      Saturn - Saturn Bomberman - Bombs and Explosions_16: 1479627346
+      Saturn - Saturn Bomberman - Bombs and Explosions_20: -464465546
+      Saturn - Saturn Bomberman - Bombs and Explosions_25: -85549742
+      Saturn - Saturn Bomberman - Bombs and Explosions_47: 559570407
+      Saturn - Saturn Bomberman - Bombs and Explosions_6: 624849394
+      Saturn - Saturn Bomberman - Bombs and Explosions_36: -230738005
+      Saturn - Saturn Bomberman - Bombs and Explosions_17: -1532354939
+      Saturn - Saturn Bomberman - Bombs and Explosions_13: 1324723228
+      Saturn - Saturn Bomberman - Bombs and Explosions_44: -446225626
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
