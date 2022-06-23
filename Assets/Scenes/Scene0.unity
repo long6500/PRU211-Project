@@ -136,8 +136,8 @@ GameObject:
   - component: {fileID: 24418538}
   - component: {fileID: 24418539}
   - component: {fileID: 24418537}
-  - component: {fileID: 24418540}
   - component: {fileID: 24418541}
+  - component: {fileID: 24418540}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -273,7 +273,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 5
   m_Sprite: {fileID: 1682603208, guid: 09ed546daf502d5459b3e2acb2509a00, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -292,22 +292,26 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 24418533}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1343b77bd0c98de4c980daaa02d68abf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputKey: 304
   bombPrefab: {fileID: 8094254133557682638, guid: 2d2b5333b643b964fa0a097cac235793, type: 3}
   bombFuseTime: 3
   bombAmount: 1
-  yourButton: {fileID: 0}
-  explosionPrefab: {fileID: 0}
+  yourButton: {fileID: 630236112}
+  explosionPrefab: {fileID: 1222769880, guid: 5e4cedd64e357964f9780536284aeb4c, type: 3}
   explosionLayerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
+  bricksLayerMask:
+    serializedVersion: 2
+    m_Bits: 1024
   explosionDuration: 1
   explosionRadius: 1
+  bricksTiles: {fileID: 1724969206}
+  bricksPrefab: {fileID: 2166925765297831036, guid: 297a63605da24464b9baf3397bafadbd, type: 3}
 --- !u!1 &256648158
 GameObject:
   m_ObjectHideFlags: 0
@@ -726,61 +730,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 838768984}
   m_CullTransparentMesh: 1
---- !u!1 &1007102048
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1007102050}
-  - component: {fileID: 1007102049}
-  m_Layer: 0
-  m_Name: Button Listener
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1007102049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1007102048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1343b77bd0c98de4c980daaa02d68abf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inputKey: 304
-  bombPrefab: {fileID: 8094254133557682638, guid: 2d2b5333b643b964fa0a097cac235793, type: 3}
-  bombFuseTime: 3
-  bombAmount: 1
-  yourButton: {fileID: 630236112}
-  explosionPrefab: {fileID: 1222769880, guid: 5e4cedd64e357964f9780536284aeb4c, type: 3}
-  explosionLayerMask:
-    serializedVersion: 2
-    m_Bits: 64
-  explosionDuration: 1
-  explosionRadius: 1
---- !u!4 &1007102050
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1007102048}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1097510108
 GameObject:
   m_ObjectHideFlags: 0
@@ -3981,7 +3930,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1724969204
 Transform:
   m_ObjectHideFlags: 0

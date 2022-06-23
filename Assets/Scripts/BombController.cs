@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Tilemaps;
 public class BombController : MonoBehaviour
 {
     [Header("Bomb")]
-    public KeyCode inputKey = KeyCode.LeftShift;
+  
     public GameObject bombPrefab;
     public float bombFuseTime = 3f;
     public int bombAmount = 1;
@@ -18,9 +19,14 @@ public class BombController : MonoBehaviour
     [Header("Explosion")]
     public Explosion explosionPrefab;
     public LayerMask explosionLayerMask;
+    public LayerMask bricksLayerMask;
     public float explosionDuration = 1f;
     public int explosionRadius = 1;
 
+
+    [Header("Bricks")]
+    public Tilemap bricksTiles;
+    public Bricks bricksPrefab;
 
     private void Start()
     {
@@ -91,9 +97,15 @@ public class BombController : MonoBehaviour
 
         if (Physics2D.OverlapBox(position, Vector2.one / 2f, 0f, explosionLayerMask))
         {
-           // ClearDestructible(position);
+            ClearBricks(position);
             return;
         }
+        //destroy brick
+        //if (Physics2D.OverlapBox(position, Vector2.one / 2f, 0f, bricksLayerMask))
+        //{
+          
+        //    return;
+        //}
 
         Explosion explosion = Instantiate(explosionPrefab, position, Quaternion.identity);
         explosion.SetActiveRenderer(length > 1 ? explosion.middle : explosion.end);
@@ -101,6 +113,18 @@ public class BombController : MonoBehaviour
         explosion.DestroyAfter(explosionDuration);
 
         Explode(position, direction, length - 1);
+    }
+
+    private void ClearBricks(Vector2 position)
+    {
+        Vector3Int cell = bricksTiles.WorldToCell(position);
+        TileBase tile = bricksTiles.GetTile(cell);
+
+        if (tile != null)
+        {
+            Instantiate(bricksPrefab, position, Quaternion.identity);
+            bricksTiles.SetTile(cell, null);
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
