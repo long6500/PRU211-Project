@@ -4,15 +4,40 @@ using UnityEngine;
 
 public class ItemPickup : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public enum ItemType
     {
-        
+        ExtraBomb,
+        BlastRadius,
+        SpeedIncrease,
     }
 
-    // Update is called once per frame
-    void Update()
+    public ItemType type;
+
+    private void OnItemPickup(GameObject player)
     {
-        
+        switch (type)
+        {
+            case ItemType.ExtraBomb:
+                player.GetComponent<BombController>().AddBomb();
+                break;
+
+            case ItemType.BlastRadius:
+                player.GetComponent<BombController>().explosionRadius++;
+                break;
+
+            case ItemType.SpeedIncrease:
+                player.GetComponent<PlayerController>().moveSpeed++;
+                break;
+        }
+
+        Destroy(gameObject);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            OnItemPickup(other.gameObject);
+        }
     }
 }
