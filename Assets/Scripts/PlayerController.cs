@@ -55,6 +55,11 @@ public class PlayerController : MonoBehaviour
         GetComponent<BombController>().enabled = false;
 
 
+        //spriteRendererUp.enabled = false;
+        //spriteRendererDown.enabled = false;
+        //spriteRendererLeft.enabled = false;
+        //spriteRendererRight.enabled = false;
+
         spriteRendererDeath.enabled = true;
 
         Invoke(nameof(OnDeathSequenceEnded), 1.25f);
@@ -63,7 +68,10 @@ public class PlayerController : MonoBehaviour
     private void OnDeathSequenceEnded()
     {
         gameObject.SetActive(false);
+
         FindObjectOfType<GameManager>().CheckGameState();
+
+
     }
 
 

@@ -866,7 +866,7 @@ GameObject:
   - component: {fileID: 1097510109}
   - component: {fileID: 1097510111}
   - component: {fileID: 1097510110}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4114,7 +4114,9 @@ GameObject:
   - component: {fileID: 1724969206}
   - component: {fileID: 1724969205}
   - component: {fileID: 1724969207}
+
   - component: {fileID: 1724969208}
+
   m_Layer: 6
   m_Name: Brick
   m_TagString: Bricks
