@@ -3,19 +3,21 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Bricks
+  - Indestructibles
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Bomb
+  - Player
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Stage
+  - Bomb
+  - Explosion
+  - Item
+  - Brick
   - 
   - 
   - 
