@@ -4114,16 +4114,14 @@ GameObject:
   - component: {fileID: 1724969206}
   - component: {fileID: 1724969205}
   - component: {fileID: 1724969207}
-
   - component: {fileID: 1724969208}
-
   m_Layer: 6
   m_Name: Brick
   m_TagString: Bricks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1724969204
 Transform:
   m_ObjectHideFlags: 0
