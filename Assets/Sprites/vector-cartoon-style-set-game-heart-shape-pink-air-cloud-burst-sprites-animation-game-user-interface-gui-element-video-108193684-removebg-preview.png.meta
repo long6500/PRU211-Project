@@ -1,0 +1,310 @@
+fileFormatVersion: 2
+guid: f8a416a9f2b7fc54cb5a51811d32dc6c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: vector-cartoon-style-set-game-heart-shape-pink-air-cloud-burst-sprites-animation-game-user-interface-gui-element-video-108193684-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 203
+        width: 119
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 515e056d6e8ea2c449ed2172b70ff16a
+      internalID: 637359976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vector-cartoon-style-set-game-heart-shape-pink-air-cloud-burst-sprites-animation-game-user-interface-gui-element-video-108193684-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 202
+        width: 120
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb918893455150544b582b496ebe54ce
+      internalID: -1500022087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vector-cartoon-style-set-game-heart-shape-pink-air-cloud-burst-sprites-animation-game-user-interface-gui-element-video-108193684-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 196
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95ab2a332022f20449a0d6a20e1d08d5
+      internalID: 1147198819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vector-cartoon-style-set-game-heart-shape-pink-air-cloud-burst-sprites-animation-game-user-interface-gui-element-video-108193684-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 194
+        width: 157
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69c1a239efb609440be2c6482764c70e
+      internalID: 820713314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vector-cartoon-style-set-game-heart-shape-pink-air-cloud-burst-sprites-animation-game-user-interface-gui-element-video-108193684-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 36
+        width: 155
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21ffdb2c3efb5eb4ba197b878b685ace
+      internalID: -2040301954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vector-cartoon-style-set-game-heart-shape-pink-air-cloud-burst-sprites-animation-game-user-interface-gui-element-video-108193684-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 25
+        width: 132
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 355ca2edca8888440b812fd90a33c994
+      internalID: 310790531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vector-cartoon-style-set-game-heart-shape-pink-air-cloud-burst-sprites-animation-game-user-interface-gui-element-video-108193684-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 32
+        width: 130
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 799a558e78f4e5b43ab3f186dd781c8b
+      internalID: 1588722382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vector-cartoon-style-set-game-heart-shape-pink-air-cloud-burst-sprites-animation-game-user-interface-gui-element-video-108193684-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 34
+        width: 133
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d7ff4c78e163ba47ae0950f85cb8b13
+      internalID: 1629823699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      vector-cartoon-style-set-game-heart-shape-pink-air-cloud-burst-sprites-animation-game-user-interface-gui-element-video-108193684-removebg-preview_3: 820713314
+      vector-cartoon-style-set-game-heart-shape-pink-air-cloud-burst-sprites-animation-game-user-interface-gui-element-video-108193684-removebg-preview_1: -1500022087
+      vector-cartoon-style-set-game-heart-shape-pink-air-cloud-burst-sprites-animation-game-user-interface-gui-element-video-108193684-removebg-preview_0: 637359976
+      vector-cartoon-style-set-game-heart-shape-pink-air-cloud-burst-sprites-animation-game-user-interface-gui-element-video-108193684-removebg-preview_4: -2040301954
+      vector-cartoon-style-set-game-heart-shape-pink-air-cloud-burst-sprites-animation-game-user-interface-gui-element-video-108193684-removebg-preview_6: 1588722382
+      vector-cartoon-style-set-game-heart-shape-pink-air-cloud-burst-sprites-animation-game-user-interface-gui-element-video-108193684-removebg-preview_2: 1147198819
+      vector-cartoon-style-set-game-heart-shape-pink-air-cloud-burst-sprites-animation-game-user-interface-gui-element-video-108193684-removebg-preview_5: 310790531
+      vector-cartoon-style-set-game-heart-shape-pink-air-cloud-burst-sprites-animation-game-user-interface-gui-element-video-108193684-removebg-preview_7: 1629823699
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
