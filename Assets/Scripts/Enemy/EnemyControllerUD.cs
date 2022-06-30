@@ -13,6 +13,8 @@ public class EnemyControllerUD : MonoBehaviour
     private bool facingUp = false;
     private Vector3 localScale;
     public Animator anim;
+
+    //public GameObject EnemyDestroyEffect;
     private void Start()
     {
         localScale = transform.GetChild(0).localScale;
@@ -31,8 +33,8 @@ public class EnemyControllerUD : MonoBehaviour
 
         if (collision.gameObject.layer == LayerMask.NameToLayer("Explosion"))
         {
-           // Die();
-            Destroy(gameObject);
+            Die();
+           
         }
 
 
@@ -40,9 +42,18 @@ public class EnemyControllerUD : MonoBehaviour
 
     private void Die()
     {
-        Debug.Log("should die here");
+        
         rb.bodyType = RigidbodyType2D.Static;
         anim.SetTrigger("death");
+        
+        Invoke(nameof(OnDeathSequenceEnded), (float) 0.5);
+    }
+
+    private void OnDeathSequenceEnded()
+    {
+        //gameObject.SetActive(false);
+    
+        Destroy(gameObject);
     }
 
     private void FixedUpdate()

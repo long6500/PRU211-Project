@@ -100,12 +100,6 @@ public class BombController : MonoBehaviour
             ClearBricks(position);
             return;
         }
-        //destroy brick
-        //if (Physics2D.OverlapBox(position, Vector2.one / 2f, 0f, bricksLayerMask))
-        //{
-          
-        //    return;
-        //}
 
         Explosion explosion = Instantiate(explosionPrefab, position, Quaternion.identity);
         explosion.SetActiveRenderer(length > 1 ? explosion.middle : explosion.end);

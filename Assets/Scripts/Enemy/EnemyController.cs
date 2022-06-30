@@ -32,8 +32,8 @@ public class EnemyController : MonoBehaviour
 
         if (collision.gameObject.layer == LayerMask.NameToLayer("Explosion"))
         {
-           // Die();
-            Destroy(gameObject);
+            Die();
+            
         }
 
 
@@ -41,8 +41,18 @@ public class EnemyController : MonoBehaviour
 
     private void Die()
     {
+
         rb.bodyType = RigidbodyType2D.Static;
         anim.SetTrigger("death");
+
+        Invoke(nameof(OnDeathSequenceEnded), (float)0.5);
+    }
+
+    private void OnDeathSequenceEnded()
+    {
+        //gameObject.SetActive(false);
+
+        Destroy(gameObject);
     }
 
     private void FixedUpdate()

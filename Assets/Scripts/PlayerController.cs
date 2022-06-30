@@ -10,20 +10,18 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 5f;
     public Animator animator;
     public MovementJoystick movementJoystick;
-    bool canMove = true;
+
     
-    [Header("Sprites")]
-    public AnimatedSpriteRenderer spriteRendererDeath;
+    //[Header("Sprites")]
+    //public AnimatedSpriteRenderer scpriteRendererDeath;
 
     private void Update()
     {
-       // movement.x = movementJoystick.joystickVec.x;
-       // movement.y = movementJoystick.joystickVec.y;
+
         animator.SetFloat("Horizontal", movementJoystick.joystickVec.x);
         animator.SetFloat("Vertical", movementJoystick.joystickVec.y);
         animator.SetFloat("Speed", movementJoystick.joystickVec.sqrMagnitude);
-       // Debug.Log("phone: " + movementJoystick.joystickVec.x);
-       // Debug.Log("keyboard: " + movement.x);
+
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -47,16 +45,22 @@ public class PlayerController : MonoBehaviour
         {
             DeathSequence();
         }
+
+        if (other.CompareTag("Enemy"))
+        {
+            DeathSequence();
+        }
     }
 
 
-    private void DeathSequence()
+    void DeathSequence()
     {
-        enabled = false;
-        GetComponent<BombController>().enabled = false;
-        
+        // enabled = false;
+        // GetComponent<BombController>().enabled = false;
+        rb.bodyType = RigidbodyType2D.Static;
+        animator.SetTrigger("death");
 
-        spriteRendererDeath.enabled = true;
+       // scpriteRendererDeath.enabled = true;
 
         Invoke(nameof(OnDeathSequenceEnded), 1.25f);
     }
