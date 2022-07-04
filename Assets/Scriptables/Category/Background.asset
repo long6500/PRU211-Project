@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f0ac42e8bdff744b8c290b3cbe80035, type: 3}
-  m_Name: Brick0
+  m_Script: {fileID: 11500000, guid: a9c2709d3f2a2074983f9ab308407e25, type: 3}
+  m_Name: Background
   m_EditorClassIdentifier: 
-  category: {fileID: 11400000, guid: de10a2d2714f28e42855402c6b371d4a, type: 2}
-  tileBase: {fileID: 11400000, guid: 1f1913e3cfd82e04ab9245f929981c5d, type: 2}
-  placeType: 1
+  placeType: 3
+  sortingOrder: 0

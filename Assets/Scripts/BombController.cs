@@ -6,7 +6,7 @@ using UnityEngine.Tilemaps;
 public class BombController : MonoBehaviour
 {
     [Header("Bomb")]
-  
+
     public GameObject bombPrefab;
     public float bombFuseTime = 3f;
     public int bombAmount = 1;
@@ -28,6 +28,8 @@ public class BombController : MonoBehaviour
     public Tilemap bricksTiles;
     public Bricks bricksPrefab;
 
+    public enum MidpointRounding { };
+
     private void Start()
     {
         if (playerObj == null)
@@ -47,7 +49,7 @@ public class BombController : MonoBehaviour
 
     public void Wrapper()
     {
-        if (bombsRemaining > 0 )
+        if (bombsRemaining > 0)
         {
             Debug.Log("asdasd");
             StartCoroutine(PlaceBomb());
@@ -59,9 +61,12 @@ public class BombController : MonoBehaviour
 
         Vector2 position = playerObj.transform.position;
 
-        position.x = Mathf.Round(position.x);
+        //position.x = Mathf.Round((position.x * 2), MidpointRounding.AwayFromZero) / 2;
         position.y = Mathf.Round(position.y);
 
+
+        Debug.Log("x: " + position.x);
+        Debug.Log("y: " + position.y);
         GameObject bomb = Instantiate(bombPrefab, position, Quaternion.identity);
         Debug.Log("bombasdasd");
         bombsRemaining--;
