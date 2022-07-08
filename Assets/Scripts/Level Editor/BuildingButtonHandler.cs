@@ -1,7 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
 public class BuildingButtonHandler : MonoBehaviour
 {
     [SerializeField] BuildingObjectBase item;
@@ -13,12 +12,21 @@ public class BuildingButtonHandler : MonoBehaviour
     {
         button = GetComponent<Button>();
         button.onClick.AddListener(ButtonClicked);
-        buildingCreator= BuildingCreator.GetInstance();
+        buildingCreator = BuildingCreator.GetInstance();
+    }
+
+    public BuildingObjectBase Item
+    {
+        set
+        {
+            item = value;
+        }
     }
 
     private void ButtonClicked()
     {
-        Debug.Log("Button was clicked:"+ item.name);
+        Debug.Log("Button was clicked: " + item.name);
         buildingCreator.ObjectSelected(item);
     }
+
 }

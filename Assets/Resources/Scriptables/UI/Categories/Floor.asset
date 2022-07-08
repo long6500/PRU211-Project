@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f0ac42e8bdff744b8c290b3cbe80035, type: 3}
-  m_Name: Indestruct
+  m_Script: {fileID: 11500000, guid: 24d7b3c868ca8474d8a57dbe20e40ada, type: 3}
+  m_Name: Floor
   m_EditorClassIdentifier: 
-  category: {fileID: 11400000, guid: a191ea63eb218e247b76feb11af1b516, type: 2}
-  tileBase: {fileID: 11400000, guid: 75f08e39b90f8dc438742f4c1a8add57, type: 2}
-  placeType: 1
+  siblingIndex: 1
+  backgroundColor: {r: 0.5754717, g: 0.33496764, b: 0.013572444, a: 1}

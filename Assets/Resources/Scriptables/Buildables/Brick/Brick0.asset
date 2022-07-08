@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f0ac42e8bdff744b8c290b3cbe80035, type: 3}
+  m_Name: Brick0
+  m_EditorClassIdentifier: 
+  category: {fileID: 11400000, guid: de10a2d2714f28e42855402c6b371d4a, type: 2}
+  uiCategory: {fileID: 11400000, guid: 1b12cd8c0559b8a4d9d49ec1b46dafea, type: 2}
+  tileBase: {fileID: 11400000, guid: 1f1913e3cfd82e04ab9245f929981c5d, type: 2}
+  placeType: 1

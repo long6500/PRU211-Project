@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f0ac42e8bdff744b8c290b3cbe80035, type: 3}
-  m_Name: Brick0
+  m_Name: Floor
   m_EditorClassIdentifier: 
-  category: {fileID: 11400000, guid: de10a2d2714f28e42855402c6b371d4a, type: 2}
-  tileBase: {fileID: 11400000, guid: 1f1913e3cfd82e04ab9245f929981c5d, type: 2}
-  placeType: 1
+  category: {fileID: 11400000, guid: 7a6d5b6964265bd4bbb6d6d8e2be2e04, type: 2}
+  uiCategory: {fileID: 11400000, guid: da7b08cebe03a1b4999dfd362c53ac57, type: 2}
+  tileBase: {fileID: 11400000, guid: 4889962b4bc240e43bc14b7db04edd5b, type: 2}
+  placeType: 0
