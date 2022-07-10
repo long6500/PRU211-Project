@@ -252,7 +252,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &24418534
 Transform:
   m_ObjectHideFlags: 0
@@ -5121,19 +5121,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1060015870524833395, guid: 81077c9a679f1514398b2097beda9d09, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1060015870524833396, guid: 81077c9a679f1514398b2097beda9d09, type: 3}
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1060015870524833396, guid: 81077c9a679f1514398b2097beda9d09, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1060015870524833396, guid: 81077c9a679f1514398b2097beda9d09, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1060015870524833396, guid: 81077c9a679f1514398b2097beda9d09, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.5
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 1060015870524833396, guid: 81077c9a679f1514398b2097beda9d09, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1060015870524833396, guid: 81077c9a679f1514398b2097beda9d09, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5202,11 +5210,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7553576940653549212, guid: 277083dbe01f7be419f6d31e36a6b9af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7553576940653549212, guid: 277083dbe01f7be419f6d31e36a6b9af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.5
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 7553576940653549212, guid: 277083dbe01f7be419f6d31e36a6b9af, type: 3}
       propertyPath: m_LocalPosition.z

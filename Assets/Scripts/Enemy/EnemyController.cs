@@ -5,39 +5,71 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     private float dirX;
+    private float dirY;
+
+    private bool moveLR = true;
+
+
     private float moveSpeed;
     private Rigidbody2D rb;
     private bool facingRight = false;
     private Vector3 localScale;
     public Animator anim;
-
+    
     private void Start()
     {
 
-      //  anim = GetComponent<Animator>();
+        //  anim = GetComponent<Animator>();
         localScale = transform.localScale;
         rb = GetComponent<Rigidbody2D>();
         dirX = 1f;
+        dirY = 1f;
         moveSpeed = 3f;
 
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Bricks")|| collision.CompareTag("Indestructibles") || collision.CompareTag("Bomb"))
+       // Debug.Log("COLLIDE");
+        if (collision.CompareTag("Bricks") || collision.CompareTag("Indestructibles") || collision.CompareTag("Bomb"))
         {
-            dirX *= -1f;
+           //  dirX *= -1f;
+           // rb.velocity = new Vector2(dirX * moveSpeed, 0);
+            Debug.Log("random: " + Random.value);
+            if (Random.value <= 0.5)
+            {
+                dirX *= -1f;
+                moveLR = true;
+            }
+            else if (Random.value > 0.5)
+            {
+                dirY *= 1f;
+                moveLR = false;
+                
+            }
+            //else
+            //{
+            //    dirY = 1f;
+            //    moveLR = false;
+            //}
         }
 
 
         if (collision.gameObject.layer == LayerMask.NameToLayer("Explosion"))
         {
             Die();
-            
+
         }
 
 
     }
+
+    void DirectionLR()
+    {
+
+    }
+
+
 
     private void Die()
     {
@@ -57,7 +89,16 @@ public class EnemyController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
+        Debug.Log("moveLR: " + moveLR);
+        if (moveLR)
+        {
+            rb.velocity = new Vector2(dirX * moveSpeed, 0);
+           //Debug.Log("veloc: "+ rb.velocity.y);
+        }
+        else
+        {
+            rb.velocity = new Vector2(0, dirY * moveSpeed);
+        }
     }
 
     private void LateUpdate()

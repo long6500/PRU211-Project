@@ -59,6 +59,7 @@ public class EnemyControllerUD : MonoBehaviour
     private void FixedUpdate()
     {
         rb.velocity = new Vector2(rb.velocity.x, dirY * moveSpeed);
+      //  Debug.Log("x = " + rb.velocity.x);
     }
 
     private void LateUpdate()

@@ -51,7 +51,7 @@ public class BombController : MonoBehaviour
     {
         if (bombsRemaining > 0)
         {
-            Debug.Log("asdasd");
+           // Debug.Log("asdasd");
             StartCoroutine(PlaceBomb());
         }
     }
@@ -68,7 +68,7 @@ public class BombController : MonoBehaviour
         Debug.Log("x: " + position.x);
         Debug.Log("y: " + position.y);
         GameObject bomb = Instantiate(bombPrefab, position, Quaternion.identity);
-        Debug.Log("bombasdasd");
+       // Debug.Log("bombasdasd");
         bombsRemaining--;
 
         yield return new WaitForSeconds(bombFuseTime);
