@@ -19,7 +19,7 @@ public class BombController : MonoBehaviour
     [Header("Explosion")]
     public Explosion explosionPrefab;
     public LayerMask explosionLayerMask;
-    public LayerMask bricksLayerMask;
+   // public LayerMask bricksLayerMask;
     public float explosionDuration = 1f;
     public int explosionRadius = 1;
 
@@ -27,6 +27,10 @@ public class BombController : MonoBehaviour
     [Header("Bricks")]
     public Tilemap bricksTiles;
     public Bricks bricksPrefab;
+
+    [Header("ExitBrick")]
+    public Tilemap exitBrickTile;
+    public ExitBrick exit;
 
     public enum MidpointRounding { };
 
@@ -65,8 +69,8 @@ public class BombController : MonoBehaviour
         position.y = Mathf.Round(position.y);
 
 
-        Debug.Log("x: " + position.x);
-        Debug.Log("y: " + position.y);
+      //  Debug.Log("x: " + position.x);
+      //  Debug.Log("y: " + position.y);
         GameObject bomb = Instantiate(bombPrefab, position, Quaternion.identity);
        // Debug.Log("bombasdasd");
         bombsRemaining--;
@@ -103,6 +107,7 @@ public class BombController : MonoBehaviour
         if (Physics2D.OverlapBox(position, Vector2.one / 2f, 0f, explosionLayerMask))
         {
             ClearBricks(position);
+            ClearExitBrick(position);
             return;
         }
 
@@ -119,10 +124,24 @@ public class BombController : MonoBehaviour
         Vector3Int cell = bricksTiles.WorldToCell(position);
         TileBase tile = bricksTiles.GetTile(cell);
 
+
+
         if (tile != null)
         {
             Instantiate(bricksPrefab, position, Quaternion.identity);
             bricksTiles.SetTile(cell, null);
+        }
+    }
+
+    private void ClearExitBrick(Vector2 position)
+    {
+        Vector3Int cell = exitBrickTile.WorldToCell(position);
+        TileBase tile = exitBrickTile.GetTile(cell);
+
+        if (tile != null)
+        {
+            Instantiate(exit, position, Quaternion.identity);
+            exitBrickTile.SetTile(cell, null);
         }
     }
 
