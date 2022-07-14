@@ -38,7 +38,7 @@ public class BombController : MonoBehaviour
         }
 
         Button btn = yourButton.GetComponent<Button>();
-        Debug.Log("qweqwe");
+      //  Debug.Log("qweqwe");
         btn.onClick.AddListener(Wrapper);
     }
     private void OnEnable()
@@ -61,7 +61,7 @@ public class BombController : MonoBehaviour
 
         Vector2 position = playerObj.transform.position;
 
-        //position.x = Mathf.Round((position.x * 2), MidpointRounding.AwayFromZero) / 2;
+        position.x = Mathf.Round(position.x);
         position.y = Mathf.Round(position.y);
 
 

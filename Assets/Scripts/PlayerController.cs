@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 5f;
     public Animator animator;
     public MovementJoystick movementJoystick;
+    GameManager manager;
 
     
     //[Header("Sprites")]
@@ -21,7 +22,7 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("Horizontal", movementJoystick.joystickVec.x);
         animator.SetFloat("Vertical", movementJoystick.joystickVec.y);
         animator.SetFloat("Speed", movementJoystick.joystickVec.sqrMagnitude);
-
+        manager = GetComponent<GameManager>();
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -68,7 +69,8 @@ public class PlayerController : MonoBehaviour
     private void OnDeathSequenceEnded()
     {
         gameObject.SetActive(false);
-        FindObjectOfType<GameManager>().CheckGameState();
+      
+        FindObjectOfType<GameManager>().PlayerDeath();
     }
 
 

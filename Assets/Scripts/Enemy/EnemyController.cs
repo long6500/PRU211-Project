@@ -33,25 +33,9 @@ public class EnemyController : MonoBehaviour
        // Debug.Log("COLLIDE");
         if (collision.CompareTag("Bricks") || collision.CompareTag("Indestructibles") || collision.CompareTag("Bomb"))
         {
-           //  dirX *= -1f;
-           // rb.velocity = new Vector2(dirX * moveSpeed, 0);
-            Debug.Log("random: " + Random.value);
-            if (Random.value <= 0.5)
-            {
-                dirX *= -1f;
-                moveLR = true;
-            }
-            else if (Random.value > 0.5)
-            {
-                dirY *= 1f;
-                moveLR = false;
-                
-            }
-            //else
-            //{
-            //    dirY = 1f;
-            //    moveLR = false;
-            //}
+             dirX *= -1f;
+   
+        
         }
 
 
@@ -64,28 +48,31 @@ public class EnemyController : MonoBehaviour
 
     }
 
-    void DirectionLR()
-    {
-
-    }
-
-
-
     private void Die()
     {
 
         rb.bodyType = RigidbodyType2D.Static;
         anim.SetTrigger("death");
-
+        
         Invoke(nameof(OnDeathSequenceEnded), (float)0.5);
+        
     }
+
+    //private void OnDeathSequenceEnded()
+    //{
+    //    //gameObject.SetActive(false);
+        
+    //    Destroy(gameObject);
+       
+    //}
 
     private void OnDeathSequenceEnded()
     {
-        //gameObject.SetActive(false);
-
-        Destroy(gameObject);
+        gameObject.SetActive(false);
+        FindObjectOfType<GameManager>().CheckGameState();
     }
+
+
 
     private void FixedUpdate()
     {

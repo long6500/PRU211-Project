@@ -4,27 +4,38 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
-    public GameObject[] players;
 
     public void CheckGameState()
     {
-        int aliveCount = 0;
+        //int aliveCount = 0;
 
-        foreach (GameObject player in players)
-        {
-            if (player.activeSelf)
-            {
-                aliveCount++;
-            }
-        }
+        //foreach (GameObject player in players)
+        //{
+        //    if (player.activeSelf)
+        //    {
+        //        aliveCount++;
+        //    }
+        //}
 
-        if (aliveCount <= 1)
+        //if (aliveCount <= 1)
+        //{
+        //    Invoke(nameof(NewRound), 3f);
+        //}
+        Debug.Log("Enemy remain: " + GameObject.FindGameObjectsWithTag("Enemy").Length);
+        if(GameObject.FindGameObjectsWithTag("Enemy").Length == 0)
         {
             Invoke(nameof(NewRound), 3f);
         }
+       
     }
 
-    private void NewRound()
+    public void PlayerDeath()
+    {
+        Invoke(nameof(NewRound), 2f);
+    }
+
+
+  private void NewRound()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
