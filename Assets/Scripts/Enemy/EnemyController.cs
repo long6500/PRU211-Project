@@ -69,7 +69,7 @@ public class EnemyController : MonoBehaviour
     private void OnDeathSequenceEnded()
     {
         gameObject.SetActive(false);
-        FindObjectOfType<GameManager>().CheckGameState();
+       // FindObjectOfType<GameManager>().CheckGameState();
     }
 
 

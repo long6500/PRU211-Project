@@ -15,4 +15,18 @@ public class NextLevel : MonoBehaviour
     {
         
     }
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+           // Debug.Log("next?");
+            FindObjectOfType<GameManager>().CheckGameState();
+
+        }
+
+
+
+    }
 }

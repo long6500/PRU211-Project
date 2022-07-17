@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1355642220212675763}
   - component: {fileID: 1355642220212675767}
   - component: {fileID: 1355642220212675766}
+  - component: {fileID: 1513358607}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -111,6 +112,8 @@ MonoBehaviour:
   moveSpeed: 5
   animator: {fileID: 1355642220212675761}
   movementJoystick: {fileID: 0}
+  uip: {fileID: 0}
+  flashEffect: {fileID: 1513358607}
 --- !u!114 &1355642220212675767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,13 +134,12 @@ MonoBehaviour:
   explosionLayerMask:
     serializedVersion: 2
     m_Bits: 64
-  bricksLayerMask:
-    serializedVersion: 2
-    m_Bits: 1024
   explosionDuration: 1
   explosionRadius: 1
   bricksTiles: {fileID: 0}
   bricksPrefab: {fileID: 2166925765297831036, guid: 297a63605da24464b9baf3397bafadbd, type: 3}
+  exitBrickTile: {fileID: 0}
+  exit: {fileID: -1746803576149471926, guid: 8f411b1fe87ac72449efffae7e995def, type: 3}
 --- !u!212 &1355642220212675766
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -190,6 +192,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1513358607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1355642220212675775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43d76b714c11ded4f967734ae1f67443, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashMaterial: {fileID: 2100000, guid: 57cc7cb541f741a4f80f2e5333f8a364, type: 2}
+  duration: 1
 --- !u!1 &1355642220240467494
 GameObject:
   m_ObjectHideFlags: 0

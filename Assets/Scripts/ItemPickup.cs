@@ -9,12 +9,29 @@ public class ItemPickup : MonoBehaviour
         ExtraBomb,
         BlastRadius,
         SpeedIncrease,
+        Live,
     }
 
     public ItemType type;
 
+  
+
+  
+
+    private void Awake()
+    {
+        
+
+    }
+
     private void OnItemPickup(GameObject player)
     {
+
+       // moveSpeed = PlayerPrefs.GetFloat("speed");
+       //// liveValue = PlayerPrefs.GetInt("live");
+       // explosionRadius = PlayerPrefs.GetInt("radius");
+       // bombAmount = PlayerPrefs.GetInt("bomb");
+
         switch (type)
         {
             case ItemType.ExtraBomb:
@@ -25,9 +42,19 @@ public class ItemPickup : MonoBehaviour
                 player.GetComponent<BombController>().explosionRadius++;
                 break;
 
-            case ItemType.SpeedIncrease:
-                player.GetComponent<PlayerController>().moveSpeed++;
+            case ItemType.Live:
+                player.GetComponent<PlayerController>().liveValue++;
+               
                 break;
+
+            case ItemType.SpeedIncrease:
+                //moveSpeed++;
+                //PlayerPrefs.SetFloat("speed", moveSpeed);
+                player.GetComponent<PlayerController>().moveSpeed++;
+
+                break;
+
+           
         }
 
         Destroy(gameObject);
@@ -39,5 +66,7 @@ public class ItemPickup : MonoBehaviour
         {
             OnItemPickup(other.gameObject);
         }
+        //Debug.Log("on trigger item");
+        
     }
 }

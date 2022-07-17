@@ -1,21 +1,56 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
 
     public Rigidbody2D rb;
     private Vector2 movement;
-    public float moveSpeed = 5f;
+    public float moveSpeed;
     public Animator animator;
     public MovementJoystick movementJoystick;
     GameManager manager;
 
-    
+
+    // [Header("Lives")]
+    //public UIplayer uip;
+    // [SerializeField] Text liveText;
+
+    [SerializeField] private SimpleFlash flashEffect;
+
+    public int liveValue;
+    //public int LiveValue
+    //{
+    //    get { return liveValue; }
+    //    set { liveValue = 2; }
+    //}
     //[Header("Sprites")]
     //public AnimatedSpriteRenderer scpriteRendererDeath;
 
+
+    private void Awake()
+    {
+
+    }
+    private void Start()
+    {
+        if (SceneManager.GetActiveScene().name.Equals("Game"))
+        {
+            liveValue = 2;
+            moveSpeed = 5;
+        }
+        else
+        {
+            liveValue = PlayerPrefs.GetInt("live");
+            moveSpeed = PlayerPrefs.GetFloat("speed");
+        }
+
+        //PlayerPrefs.SetInt("live", liveValue);
+        //PlayerPrefs.SetFloat("speed", moveSpeed);
+
+    }
     private void Update()
     {
 
@@ -24,6 +59,14 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("Speed", movementJoystick.joystickVec.sqrMagnitude);
         manager = GetComponent<GameManager>();
         rb = GetComponent<Rigidbody2D>();
+        //uip = GetComponent<UIplayer>();
+        //liveValue = PlayerPrefs.GetInt("live");
+        //moveSpeed = PlayerPrefs.GetFloat("speed");
+
+     //  Debug.Log("lives :" + liveValue);
+
+
+
     }
 
     private void FixedUpdate()
@@ -44,10 +87,25 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("Explosion"))
         {
-            DeathSequence();
+            liveValue--;
+            // PlayerPrefs.SetInt("live", liveValue);
+
+            flashEffect.Flash();
+            // DeathSequence();
         }
 
         if (other.CompareTag("Enemy"))
+        {
+            liveValue--;
+            //   PlayerPrefs.SetInt("live", liveValue);
+
+            flashEffect.Flash();
+
+            // DeathSequence();
+        }
+
+        // Debug.Log("live: " + liveValue);
+        if (liveValue == 0)
         {
             DeathSequence();
         }
@@ -61,7 +119,7 @@ public class PlayerController : MonoBehaviour
         rb.bodyType = RigidbodyType2D.Static;
         animator.SetTrigger("death");
 
-       // scpriteRendererDeath.enabled = true;
+        // scpriteRendererDeath.enabled = true;
 
         Invoke(nameof(OnDeathSequenceEnded), 1.25f);
     }
@@ -69,7 +127,7 @@ public class PlayerController : MonoBehaviour
     private void OnDeathSequenceEnded()
     {
         gameObject.SetActive(false);
-      
+
         FindObjectOfType<GameManager>().PlayerDeath();
     }
 

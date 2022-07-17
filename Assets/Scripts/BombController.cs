@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
 public class BombController : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class BombController : MonoBehaviour
 
     public GameObject bombPrefab;
     public float bombFuseTime = 3f;
-    public int bombAmount = 1;
+    public int bombAmount;
     private int bombsRemaining;
 
     public Button yourButton;
@@ -19,9 +20,9 @@ public class BombController : MonoBehaviour
     [Header("Explosion")]
     public Explosion explosionPrefab;
     public LayerMask explosionLayerMask;
-   // public LayerMask bricksLayerMask;
+    // public LayerMask bricksLayerMask;
     public float explosionDuration = 1f;
-    public int explosionRadius = 1;
+    public int explosionRadius;
 
 
     [Header("Bricks")]
@@ -31,6 +32,7 @@ public class BombController : MonoBehaviour
     [Header("ExitBrick")]
     public Tilemap exitBrickTile;
     public ExitBrick exit;
+
 
     public enum MidpointRounding { };
 
@@ -42,9 +44,23 @@ public class BombController : MonoBehaviour
         }
 
         Button btn = yourButton.GetComponent<Button>();
-      //  Debug.Log("qweqwe");
+        //  Debug.Log("qweqwe");
         btn.onClick.AddListener(Wrapper);
+
+        if (SceneManager.GetActiveScene().name.Equals("Game"))
+        {
+            explosionRadius = 1;
+            bombAmount = 1;
+        }
+        else
+        {
+            explosionRadius = PlayerPrefs.GetInt("radius");
+            bombAmount = PlayerPrefs.GetInt("bomb");
+        }
+
     }
+
+
     private void OnEnable()
     {
         bombsRemaining = bombAmount;
@@ -55,7 +71,7 @@ public class BombController : MonoBehaviour
     {
         if (bombsRemaining > 0)
         {
-           // Debug.Log("asdasd");
+            // Debug.Log("asdasd");
             StartCoroutine(PlaceBomb());
         }
     }
@@ -69,10 +85,10 @@ public class BombController : MonoBehaviour
         position.y = Mathf.Round(position.y);
 
 
-      //  Debug.Log("x: " + position.x);
-      //  Debug.Log("y: " + position.y);
+        //  Debug.Log("x: " + position.x);
+        //  Debug.Log("y: " + position.y);
         GameObject bomb = Instantiate(bombPrefab, position, Quaternion.identity);
-       // Debug.Log("bombasdasd");
+        // Debug.Log("bombasdasd");
         bombsRemaining--;
 
         yield return new WaitForSeconds(bombFuseTime);
@@ -149,6 +165,10 @@ public class BombController : MonoBehaviour
     {
         bombAmount++;
         bombsRemaining++;
+        Debug.Log("bomb: " + bombAmount);
+        Debug.Log("bomb remain : " + bombsRemaining);
+
+     
     }
 
     private void OnTriggerExit2D(Collider2D other)
