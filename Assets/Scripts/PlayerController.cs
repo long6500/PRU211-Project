@@ -39,7 +39,13 @@ public class PlayerController : MonoBehaviour
         if (SceneManager.GetActiveScene().name.Equals("Game"))
         {
             liveValue = 2;
-            moveSpeed = 5;
+            moveSpeed = 3;
+        }
+        else if(SceneManager.GetActiveScene().name.Equals("Game 1"))
+        {
+            liveValue = PlayerPrefs.GetInt("live");
+            moveSpeed = Mathf.RoundToInt(PlayerPrefs.GetFloat("speed") / 2);
+
         }
         else
         {

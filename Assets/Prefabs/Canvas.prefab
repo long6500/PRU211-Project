@@ -61,7 +61,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_Color: {r: 0.2271077, g: 0.735849, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -596,7 +596,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 242.73, y: 38.8}
+  m_AnchoredPosition: {x: 153, y: 177}
   m_SizeDelta: {x: 38.5477, y: 38.1186}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &851680395
@@ -673,7 +673,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 242.73, y: 124}
+  m_AnchoredPosition: {x: -85, y: 177}
   m_SizeDelta: {x: 38.5477, y: 38.1186}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &867736004
@@ -750,7 +750,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 242.73, y: 81.10001}
+  m_AnchoredPosition: {x: 33, y: 177}
   m_SizeDelta: {x: 38.5477, y: 38.1186}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1092850962
@@ -827,7 +827,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 242.73, y: 166.1}
+  m_AnchoredPosition: {x: -210, y: 177}
   m_SizeDelta: {x: 38.5477, y: 38.1186}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1133032875
@@ -1102,7 +1102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_Color: {r: 0, g: 1, b: 0.2462554, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1717,7 +1717,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd33e8256f7b3a844b5e8a30932d5b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  yourButton: {fileID: 0}
   pauseMenuUI: {fileID: 482252505}
 --- !u!1 &7379721305052652326
 GameObject:

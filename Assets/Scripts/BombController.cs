@@ -51,11 +51,22 @@ public class BombController : MonoBehaviour
         {
             explosionRadius = 1;
             bombAmount = 1;
+            bombPrefab.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+        }
+        else if (SceneManager.GetActiveScene().name.Equals("Game 1"))
+        {
+            explosionRadius = Mathf.RoundToInt(PlayerPrefs.GetInt("radius")/2);
+            bombAmount = PlayerPrefs.GetInt("bomb");
+            bombsRemaining = bombAmount;
+            bombPrefab.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
         }
         else
         {
             explosionRadius = PlayerPrefs.GetInt("radius");
             bombAmount = PlayerPrefs.GetInt("bomb");
+            bombsRemaining = bombAmount;
+            Debug.Log("reamain: " + bombsRemaining);
+
         }
 
     }
@@ -168,7 +179,7 @@ public class BombController : MonoBehaviour
         Debug.Log("bomb: " + bombAmount);
         Debug.Log("bomb remain : " + bombsRemaining);
 
-     
+
     }
 
     private void OnTriggerExit2D(Collider2D other)

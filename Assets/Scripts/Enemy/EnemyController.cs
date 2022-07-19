@@ -15,7 +15,7 @@ public class EnemyController : MonoBehaviour
     private bool facingRight = false;
     private Vector3 localScale;
     public Animator anim;
-    
+
     private void Start()
     {
 
@@ -23,19 +23,54 @@ public class EnemyController : MonoBehaviour
         localScale = transform.localScale;
         rb = GetComponent<Rigidbody2D>();
         dirX = 1f;
-        dirY = 1f;
-        moveSpeed = 3f;
+        dirY = 0f;
+        moveSpeed = 1.2f;
 
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-       // Debug.Log("COLLIDE");
+         Debug.Log("COLLIDE");
         if (collision.CompareTag("Bricks") || collision.CompareTag("Indestructibles") || collision.CompareTag("Bomb"))
         {
-             dirX *= -1f;
-   
-        
+          //  dirX *= -1f;
+
+            if (Mathf.Abs(dirX) == 1)
+            {
+                dirX = Random.value < 0.5 ? dirX*(-1) : 0;
+                if(Mathf.Abs(dirX) == 1)
+                {
+                    dirY = 0;
+                }if(dirX == 0)
+                {
+                    dirY = Random.value < 0.5 ? -1 : 1;
+                }
+            }
+            if(Mathf.Abs(dirY) == 1)
+            {
+                dirY = Random.value < 0.5 ? dirY * (-1) : 0;
+                if (Mathf.Abs(dirY) == 1)
+                {
+                    dirX = 0;
+                }
+                if (dirY == 0)
+                {
+                    dirX = Random.value < 0.5 ? -1 : 1;
+                }
+            }
+
+            Debug.Log("X:" + dirX);
+            Debug.Log("Y:" + dirY);
+
+            Vector2 position = gameObject.transform.position;
+
+            position.x = Mathf.Round(position.x);
+            position.y = Mathf.Round(position.y);
+
+            transform.position = position;
+
+
+
         }
 
 
@@ -53,39 +88,41 @@ public class EnemyController : MonoBehaviour
 
         rb.bodyType = RigidbodyType2D.Static;
         anim.SetTrigger("death");
-        
+
         Invoke(nameof(OnDeathSequenceEnded), (float)0.5);
-        
+
     }
 
     //private void OnDeathSequenceEnded()
     //{
     //    //gameObject.SetActive(false);
-        
+
     //    Destroy(gameObject);
-       
+
     //}
 
     private void OnDeathSequenceEnded()
     {
         gameObject.SetActive(false);
-       // FindObjectOfType<GameManager>().CheckGameState();
+        // FindObjectOfType<GameManager>().CheckGameState();
     }
 
 
 
     private void FixedUpdate()
     {
-        Debug.Log("moveLR: " + moveLR);
-        if (moveLR)
-        {
-            rb.velocity = new Vector2(dirX * moveSpeed, 0);
-           //Debug.Log("veloc: "+ rb.velocity.y);
-        }
-        else
-        {
-            rb.velocity = new Vector2(0, dirY * moveSpeed);
-        }
+        //Debug.Log("moveLR: " + moveLR);
+        //if (moveLR)
+        //{
+        //    rb.velocity = new Vector2(dirX * moveSpeed, 0);
+        //    //Debug.Log("veloc: "+ rb.velocity.y);
+        //}
+        //else
+        //{
+        //    rb.velocity = new Vector2(0, dirY * moveSpeed);
+        //}
+        rb.velocity = new Vector2(dirX * moveSpeed, dirY * moveSpeed);
+
     }
 
     private void LateUpdate()

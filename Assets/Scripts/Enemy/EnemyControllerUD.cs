@@ -20,7 +20,7 @@ public class EnemyControllerUD : MonoBehaviour
         localScale = transform.GetChild(0).localScale;
         rb = GetComponent<Rigidbody2D>();
         dirY = 1f;
-        moveSpeed = 3f;
+        moveSpeed = 1.2f;
 
     }
 

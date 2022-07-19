@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1062447011}
   - component: {fileID: 1062447012}
   m_Layer: 0
-  m_Name: Bricks
+  m_Name: BricksLvl_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 498625665, guid: f8692811bfb1a6d42a7692b82bbcdf45, type: 3}
+  m_Sprite: {fileID: -1560995633, guid: 2e6288c8328e24d43b2f5b2ebb6c2bda, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -102,9 +102,8 @@ MonoBehaviour:
   destroyTime: 1
   itemSpawnChance: 0.2
   spawnableItems:
-  - {fileID: 4650746184489098935, guid: 1f85effc17a1cca479b3ee778ecfd3c3, type: 3}
   - {fileID: 4494986668040321280, guid: 37753469833bc114aa59d27ae2bbf767, type: 3}
-  - {fileID: 3125868570142633383, guid: 3acebe74324194e48817512e5b4eaba2, type: 3}
+  - {fileID: 4650746184489098935, guid: 1f85effc17a1cca479b3ee778ecfd3c3, type: 3}
   - {fileID: 3125868570142633383, guid: 9cbb1264846905b4c842168f3e0750a9, type: 3}
 --- !u!61 &1062447011
 BoxCollider2D:
