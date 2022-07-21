@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyController : MonoBehaviour
+public class EnemyMultiDirection : MonoBehaviour
 {
-   [SerializeField] private float dirX;
+    [SerializeField] private float dirX = 1;
     private float dirY;
 
     private bool moveLR = true;
@@ -33,41 +33,41 @@ public class EnemyController : MonoBehaviour
          Debug.Log("COLLIDE");
         if (collision.CompareTag("Bricks") || collision.CompareTag("Indestructibles") || collision.CompareTag("Bomb"))
         {
-            dirX *= -1f;
+          //  dirX *= -1f;
 
-            //if (Mathf.Abs(dirX) == 1)
-            //{
-            //    dirX = Random.value < 0.5 ? dirX*(-1) : 0;
-            //    if(Mathf.Abs(dirX) == 1)
-            //    {
-            //        dirY = 0;
-            //    }if(dirX == 0)
-            //    {
-            //        dirY = Random.value < 0.5 ? -1 : 1;
-            //    }
-            //}
-            //if(Mathf.Abs(dirY) == 1)
-            //{
-            //    dirY = Random.value < 0.5 ? dirY * (-1) : 0;
-            //    if (Mathf.Abs(dirY) == 1)
-            //    {
-            //        dirX = 0;
-            //    }
-            //    if (dirY == 0)
-            //    {
-            //        dirX = Random.value < 0.5 ? -1 : 1;
-            //    }
-            //}
+            if (Mathf.Abs(dirX) == 1)
+            {
+                dirX = Random.value < 0.5 ? dirX*(-1) : 0;
+                if(Mathf.Abs(dirX) == 1)
+                {
+                    dirY = 0;
+                }if(dirX == 0)
+                {
+                    dirY = Random.value < 0.5 ? -1 : 1;
+                }
+            }
+            if(Mathf.Abs(dirY) == 1)
+            {
+                dirY = Random.value < 0.5 ? dirY * (-1) : 0;
+                if (Mathf.Abs(dirY) == 1)
+                {
+                    dirX = 0;
+                }
+                if (dirY == 0)
+                {
+                    dirX = Random.value < 0.5 ? -1 : 1;
+                }
+            }
 
-            //Debug.Log("X:" + dirX);
-            //Debug.Log("Y:" + dirY);
+            Debug.Log("X:" + dirX);
+            Debug.Log("Y:" + dirY);
 
-            //Vector2 position = gameObject.transform.position;
+            Vector2 position = gameObject.transform.position;
 
-            //position.x = Mathf.Round(position.x);
-            //position.y = Mathf.Round(position.y);
+            position.x = Mathf.Round(position.x);
+            position.y = Mathf.Round(position.y);
 
-            //transform.position = position;
+            transform.position = position;
 
 
 

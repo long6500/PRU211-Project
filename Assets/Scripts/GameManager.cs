@@ -48,6 +48,11 @@ public class GameManager : MonoBehaviour
 
     }
 
+    public void FinalExit()
+    {
+        Invoke(nameof(NextRound), 0.5f);
+    }
+
     public void PlayerDeath()
     {
         Invoke(nameof(NewRound), 2f);

@@ -44,13 +44,13 @@ public class PlayerController : MonoBehaviour
         else if(SceneManager.GetActiveScene().name.Equals("Game 1"))
         {
             liveValue = PlayerPrefs.GetInt("live");
-            moveSpeed = Mathf.RoundToInt(PlayerPrefs.GetFloat("speed") / 2);
+            moveSpeed = Mathf.RoundToInt(PlayerPrefs.GetFloat("speed") * 2);
 
         }
-        else
+        else if (SceneManager.GetActiveScene().name.Equals("Game 2"))
         {
-            liveValue = PlayerPrefs.GetInt("live");
-            moveSpeed = PlayerPrefs.GetFloat("speed");
+            liveValue = 2;
+            moveSpeed = 4;
         }
 
         //PlayerPrefs.SetInt("live", liveValue);
@@ -91,7 +91,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.layer == LayerMask.NameToLayer("Explosion"))
+        if (other.gameObject.layer == LayerMask.NameToLayer("Explosion") || other.gameObject.layer == LayerMask.NameToLayer("Trap"))
         {
             liveValue--;
             // PlayerPrefs.SetInt("live", liveValue);
@@ -100,7 +100,7 @@ public class PlayerController : MonoBehaviour
             // DeathSequence();
         }
 
-        if (other.CompareTag("Enemy"))
+        if (other.CompareTag("Enemy") )
         {
             liveValue--;
             //   PlayerPrefs.SetInt("live", liveValue);

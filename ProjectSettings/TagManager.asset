@@ -8,6 +8,7 @@ TagManager:
   - Indestructibles
   - Bomb
   - Enemy
+  - Trap
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - Item
   - Brick
   - Enemy
-  - 
+  - Trap
   - 
   - 
   - 

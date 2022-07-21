@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c71f39cbf9f52d44da977c1baf6f2581
+guid: a00cc79ce90770f4daad41af96473b2d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -116,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ghost down
+      name: FD_Dungeon_Free_0
       rect:
         serializedVersion: 2
-        x: 19
-        y: 471
-        width: 15
-        height: 15
+        x: 57
+        y: 81
+        width: 30
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,18 +130,123 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11644e350596fff4495a0ae8431cb24a
-      internalID: -780347347
+      spriteID: 80a17536b1d34a74aa7c89a9336adbdf
+      internalID: -1520842646
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ghost up
+      name: Trap
       rect:
         serializedVersion: 2
-        x: 36
-        y: 470
+        x: 49
+        y: 209
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01ae4c3bb1154f246b11a793937a26b3
+      internalID: 1492808860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon box
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84acede3d8309d94cbc862afae4fa3b5
+      internalID: -1431524013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FD_Dungeon_Free_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 836a1c59e8c4ad0418677f8dd6b57ff2
+      internalID: -1665375298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FD_Dungeon_Free_2
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 240
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42349c6206d302643b0d08104606774c
+      internalID: -342212529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FD_Dungeon_Free_3
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d9b65cd36c94a14a9f43089eaa4bc1c
+      internalID: -2095706754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FD_Dungeon_Free_4
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 240
         width: 15
         height: 16
       alignment: 0
@@ -151,176 +256,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e36bca8b330e49441abfb626e47fe982
-      internalID: 526308414
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ghost left
-      rect:
-        serializedVersion: 2
-        x: 70
-        y: 470
-        width: 15
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ac39a986bc5d0c94cb4f1c44a94dea69
-      internalID: -246738897
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ghost right
-      rect:
-        serializedVersion: 2
-        x: 121
-        y: 470
-        width: 15
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ab12fe2d159d2b64d881bf737d7c2c68
-      internalID: 2081928341
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ghost green up
-      rect:
-        serializedVersion: 2
-        x: 36
-        y: 380
-        width: 15
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4d27a67ba86f842439a680ec05d3728f
-      internalID: 902559729
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ghost green down
-      rect:
-        serializedVersion: 2
-        x: 19
-        y: 380
-        width: 15
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 72373092bdde3cc42a15368d6e69233f
-      internalID: -29648260
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ghost green eye up
-      rect:
-        serializedVersion: 2
-        x: 190
-        y: 383
-        width: 11
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0dfcb0fe51888b84b9c39d8e679465b7
-      internalID: 1506584676
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ghost eye up
-      rect:
-        serializedVersion: 2
-        x: 190
-        y: 365
-        width: 11
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b2fc0577c21f38b41b7f0a27e02f3549
-      internalID: 2109788816
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ghost blue up
-      rect:
-        serializedVersion: 2
-        x: 53
-        y: 362
-        width: 15
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e02d359164d82e340a574c4355042878
-      internalID: 1059728901
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ghost_0
-      rect:
-        serializedVersion: 2
-        x: 70
-        y: 254
-        width: 15
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c7263c2187a2c1e4e87d62682cf05efc
-      internalID: -845298720
+      spriteID: 10e2ffc6a6538414a89db4b89a755b43
+      internalID: 252879060
       vertices: []
       indices: 
       edges: []
@@ -336,16 +273,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ghost_0: -845298720
-      ghost eye up: 2109788816
-      ghost green eye up: 1506584676
-      ghost up: 526308414
-      ghost green up: 902559729
-      ghost right: 2081928341
-      ghost left: -246738897
-      ghost down: -780347347
-      ghost green down: -29648260
-      ghost blue up: 1059728901
+      FD_Dungeon_Free_2: -342212529
+      FD_Dungeon_Free_3: -2095706754
+      FD_Dungeon_Free_4: 252879060
+      dungeon box: -1431524013
+      Trap: 1492808860
+      FD_Dungeon_Free_0: -1520842646
+      FD_Dungeon_Free_1: -1665375298
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
