@@ -56,6 +56,10 @@ public class BombController : MonoBehaviour
         else if (SceneManager.GetActiveScene().name.Equals("Game 1"))
         {
             explosionRadius = Mathf.RoundToInt(PlayerPrefs.GetInt("radius")/2);
+            if(explosionRadius <= 1)
+            {
+                explosionRadius = 1;
+            }
             bombAmount = PlayerPrefs.GetInt("bomb");
             bombsRemaining = bombAmount;
             bombPrefab.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
