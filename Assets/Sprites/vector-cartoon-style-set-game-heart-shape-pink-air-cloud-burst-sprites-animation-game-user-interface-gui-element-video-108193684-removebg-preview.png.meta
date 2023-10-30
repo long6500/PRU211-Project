@@ -3,7 +3,7 @@ guid: f8a416a9f2b7fc54cb5a51811d32dc6c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -63,6 +63,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -294,13 +295,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      vector-cartoon-style-set-game-heart-shape-pink-air-cloud-burst-sprites-animation-game-user-interface-gui-element-video-108193684-removebg-preview_3: 820713314
-      vector-cartoon-style-set-game-heart-shape-pink-air-cloud-burst-sprites-animation-game-user-interface-gui-element-video-108193684-removebg-preview_1: -1500022087
       vector-cartoon-style-set-game-heart-shape-pink-air-cloud-burst-sprites-animation-game-user-interface-gui-element-video-108193684-removebg-preview_0: 637359976
-      vector-cartoon-style-set-game-heart-shape-pink-air-cloud-burst-sprites-animation-game-user-interface-gui-element-video-108193684-removebg-preview_4: -2040301954
-      vector-cartoon-style-set-game-heart-shape-pink-air-cloud-burst-sprites-animation-game-user-interface-gui-element-video-108193684-removebg-preview_6: 1588722382
+      vector-cartoon-style-set-game-heart-shape-pink-air-cloud-burst-sprites-animation-game-user-interface-gui-element-video-108193684-removebg-preview_1: -1500022087
       vector-cartoon-style-set-game-heart-shape-pink-air-cloud-burst-sprites-animation-game-user-interface-gui-element-video-108193684-removebg-preview_2: 1147198819
+      vector-cartoon-style-set-game-heart-shape-pink-air-cloud-burst-sprites-animation-game-user-interface-gui-element-video-108193684-removebg-preview_3: 820713314
+      vector-cartoon-style-set-game-heart-shape-pink-air-cloud-burst-sprites-animation-game-user-interface-gui-element-video-108193684-removebg-preview_4: -2040301954
       vector-cartoon-style-set-game-heart-shape-pink-air-cloud-burst-sprites-animation-game-user-interface-gui-element-video-108193684-removebg-preview_5: 310790531
+      vector-cartoon-style-set-game-heart-shape-pink-air-cloud-burst-sprites-animation-game-user-interface-gui-element-video-108193684-removebg-preview_6: 1588722382
       vector-cartoon-style-set-game-heart-shape-pink-air-cloud-burst-sprites-animation-game-user-interface-gui-element-video-108193684-removebg-preview_7: 1629823699
   spritePackingTag: 
   pSDRemoveMatte: 0

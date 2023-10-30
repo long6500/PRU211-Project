@@ -3,7 +3,7 @@ guid: 7bbecedcca4aa0547a29451782c80dc9
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -63,6 +63,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -294,14 +295,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Small Explosion Spriteheet_6: 872566115
-      Small Explosion Spriteheet_7: -1435555825
       Small Explosion Spriteheet_0: 1083928689
-      Small Explosion Spriteheet_2: -461051306
       Small Explosion Spriteheet_1: 1284511722
+      Small Explosion Spriteheet_2: -461051306
       Small Explosion Spriteheet_3: -1694939590
       Small Explosion Spriteheet_4: -321196144
       Small Explosion Spriteheet_5: 378954941
+      Small Explosion Spriteheet_6: 872566115
+      Small Explosion Spriteheet_7: -1435555825
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

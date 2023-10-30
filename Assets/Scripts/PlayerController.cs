@@ -95,8 +95,9 @@ public class PlayerController : MonoBehaviour
         {
             liveValue--;
             // PlayerPrefs.SetInt("live", liveValue);
-
             flashEffect.Flash();
+            AudioManager.Play(AudioName.PlayerHit);
+
             // DeathSequence();
         }
 
@@ -106,6 +107,7 @@ public class PlayerController : MonoBehaviour
             //   PlayerPrefs.SetInt("live", liveValue);
 
             flashEffect.Flash();
+            AudioManager.Play(AudioName.PlayerHit);
 
             // DeathSequence();
         }

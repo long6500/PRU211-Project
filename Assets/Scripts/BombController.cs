@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
+using System;
+
 public class BombController : MonoBehaviour
 {
     [Header("Bomb")]
@@ -90,6 +92,7 @@ public class BombController : MonoBehaviour
             StartCoroutine(PlaceBomb());
         }
     }
+    AudioSource audioSource;
 
     private IEnumerator PlaceBomb()
     {
@@ -121,11 +124,14 @@ public class BombController : MonoBehaviour
         Explode(position, Vector2.left, explosionRadius);
         Explode(position, Vector2.right, explosionRadius);
 
+        AudioManager.Play(AudioName.BombExplode);
+
         Destroy(bomb.gameObject);
+       Debug.Log("Bom no");
         bombsRemaining++;
     }
 
-
+  
     private void Explode(Vector2 position, Vector2 direction, int length)
     {
         if (length <= 0)
@@ -146,8 +152,11 @@ public class BombController : MonoBehaviour
         explosion.SetActiveRenderer(length > 1 ? explosion.middle : explosion.end);
         explosion.SetDirection(direction);
         explosion.DestroyAfter(explosionDuration);
+      
 
         Explode(position, direction, length - 1);
+
+        
     }
 
     private void ClearBricks(Vector2 position)
@@ -171,7 +180,9 @@ public class BombController : MonoBehaviour
 
         if (tile != null)
         {
+            //create prefab
             Instantiate(exit, position, Quaternion.identity);
+            //remove tilemap
             exitBrickTile.SetTile(cell, null);
         }
     }

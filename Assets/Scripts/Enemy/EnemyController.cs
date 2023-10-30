@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-   [SerializeField] private float dirX;
+    [SerializeField] private float dirX;
     private float dirY;
 
     private bool moveLR = true;
@@ -22,7 +22,7 @@ public class EnemyController : MonoBehaviour
         //  anim = GetComponent<Animator>();
         localScale = transform.localScale;
         rb = GetComponent<Rigidbody2D>();
-       // dirX = 1f;
+        // dirX = 1f;
         dirY = 0f;
         moveSpeed = 1.2f;
 
@@ -30,7 +30,7 @@ public class EnemyController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-         Debug.Log("COLLIDE");
+        //Debug.Log("COLLIDE");
         if (collision.CompareTag("Bricks") || collision.CompareTag("Indestructibles") || collision.CompareTag("Bomb"))
         {
             dirX *= -1f;
@@ -70,6 +70,16 @@ public class EnemyController : MonoBehaviour
             //transform.position = position;
 
 
+            //if (dirX > 0)
+            //{
+            //    anim.SetTrigger("right");
+
+            //}
+            //else
+            //{
+            //    anim.SetTrigger("left");
+
+            //}
 
         }
 
@@ -122,12 +132,14 @@ public class EnemyController : MonoBehaviour
         //    rb.velocity = new Vector2(0, dirY * moveSpeed);
         //}
         rb.velocity = new Vector2(dirX * moveSpeed, dirY * moveSpeed);
+        //CheckWhereToFace();
 
     }
 
     private void LateUpdate()
     {
         CheckWhereToFace();
+
     }
     void CheckWhereToFace()
     {
