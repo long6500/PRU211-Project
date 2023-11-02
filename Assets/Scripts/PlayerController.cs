@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
+using System.Xml.Linq;
+using UnityEngine.UIElements;
+
 public class PlayerController : MonoBehaviour
 {
 
@@ -14,11 +18,14 @@ public class PlayerController : MonoBehaviour
     GameManager manager;
 
 
+
     // [Header("Lives")]
     //public UIplayer uip;
     // [SerializeField] Text liveText;
 
     [SerializeField] private SimpleFlash flashEffect;
+    [SerializeField] private FloatSO floatSO;
+
 
     public int liveValue;
     //public int LiveValue
@@ -29,10 +36,20 @@ public class PlayerController : MonoBehaviour
     //[Header("Sprites")]
     //public AnimatedSpriteRenderer scpriteRendererDeath;
 
-
+    
     private void Awake()
     {
+        //manager = FindObjectOfType<GameManager>();
 
+        //Debug.Log(manager.nextGame ? "trueAwake" : "falseAwake");
+
+        //manager = FindObjectOfType<GameManager>();
+
+        //if (!manager.nextGame)
+        //{
+        //    liveValue = 2;
+        //    moveSpeed = 10;
+        //}
     }
     private void Start()
     {
@@ -40,17 +57,35 @@ public class PlayerController : MonoBehaviour
         {
             liveValue = 2;
             moveSpeed = 3;
+
         }
-        else if(SceneManager.GetActiveScene().name.Equals("Game 1"))
+        else if (SceneManager.GetActiveScene().name.Equals("Game 1"))
         {
-            liveValue = PlayerPrefs.GetInt("live");
-            moveSpeed = Mathf.RoundToInt(PlayerPrefs.GetFloat("speed") * 2);
+            manager = FindObjectOfType<GameManager>();
+
+            //chon game scene tu menu
+            if (!manager.nextGame)
+            {
+                liveValue = 2;
+                moveSpeed = 10;
+            }
+            else
+            {
+                //liveValue = PlayerPrefs.GetInt("live");
+                //moveSpeed = Mathf.RoundToInt(PlayerPrefs.GetFloat("speed") * 2);
+                Debug.Log(floatSO.Live);
+                Debug.Log(Mathf.RoundToInt(floatSO.MoveSpeed * 2));
+
+                liveValue = floatSO.Live;
+                moveSpeed = Mathf.RoundToInt(floatSO.MoveSpeed*2);
+            }
+
 
         }
         else if (SceneManager.GetActiveScene().name.Equals("Game 2"))
         {
             liveValue = 2;
-            moveSpeed = 4;
+            moveSpeed = 3;
         }
 
         //PlayerPrefs.SetInt("live", liveValue);
@@ -59,17 +94,19 @@ public class PlayerController : MonoBehaviour
     }
     private void Update()
     {
+        if (SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            floatSO.Live = liveValue;
+            floatSO.MoveSpeed = moveSpeed;
+        }
+
 
         animator.SetFloat("Horizontal", movementJoystick.joystickVec.x);
         animator.SetFloat("Vertical", movementJoystick.joystickVec.y);
         animator.SetFloat("Speed", movementJoystick.joystickVec.sqrMagnitude);
-        manager = GetComponent<GameManager>();
+        //manager = GetComponent<GameManager>();
         rb = GetComponent<Rigidbody2D>();
-        //uip = GetComponent<UIplayer>();
-        //liveValue = PlayerPrefs.GetInt("live");
-        //moveSpeed = PlayerPrefs.GetFloat("speed");
-
-     //  Debug.Log("lives :" + liveValue);
+     
 
 
 
@@ -94,18 +131,17 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.layer == LayerMask.NameToLayer("Explosion") || other.gameObject.layer == LayerMask.NameToLayer("Trap"))
         {
             liveValue--;
-            // PlayerPrefs.SetInt("live", liveValue);
+            //floatSO.Live--;
             flashEffect.Flash();
             AudioManager.Play(AudioName.PlayerHit);
 
             // DeathSequence();
         }
 
-        if (other.CompareTag("Enemy") )
+        if (other.CompareTag("Enemy"))
         {
             liveValue--;
-            //   PlayerPrefs.SetInt("live", liveValue);
-
+            //floatSO.Live--;
             flashEffect.Flash();
             AudioManager.Play(AudioName.PlayerHit);
 
@@ -122,6 +158,8 @@ public class PlayerController : MonoBehaviour
 
     void DeathSequence()
     {
+
+       
         // enabled = false;
         // GetComponent<BombController>().enabled = false;
         rb.bodyType = RigidbodyType2D.Static;
@@ -137,6 +175,8 @@ public class PlayerController : MonoBehaviour
         gameObject.SetActive(false);
 
         FindObjectOfType<GameManager>().PlayerDeath();
+
+       
     }
 
 

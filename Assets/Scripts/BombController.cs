@@ -8,6 +8,10 @@ using System;
 
 public class BombController : MonoBehaviour
 {
+
+
+
+
     [Header("Bomb")]
 
     public GameObject bombPrefab;
@@ -36,6 +40,11 @@ public class BombController : MonoBehaviour
     public ExitBrick exit;
 
 
+    GameManager manager;
+    [SerializeField] private FloatSO floatSO;
+
+
+
     public enum MidpointRounding { };
 
     private void Start()
@@ -57,24 +66,46 @@ public class BombController : MonoBehaviour
         }
         else if (SceneManager.GetActiveScene().name.Equals("Game 1"))
         {
-            explosionRadius = Mathf.RoundToInt(PlayerPrefs.GetInt("radius")/2);
-            if(explosionRadius <= 1)
+            manager = FindObjectOfType<GameManager>();
+            if (!manager.nextGame)
             {
                 explosionRadius = 1;
+                bombAmount = 1;
+                bombsRemaining = bombAmount;
             }
-            bombAmount = PlayerPrefs.GetInt("bomb");
-            bombsRemaining = bombAmount;
+            else
+            {
+                //explosionRadius = Mathf.RoundToInt(PlayerPrefs.GetInt("radius") / 2);
+                explosionRadius = Mathf.RoundToInt(floatSO.Radius / 2);
+                if (explosionRadius <= 1)
+                {
+                    explosionRadius = 1;
+                }
+                bombAmount = floatSO.Bomb;
+                bombsRemaining = bombAmount;
+            }
+
+
             bombPrefab.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
         }
-        else if(SceneManager.GetActiveScene().name.Equals("Game 2"))
+        else if (SceneManager.GetActiveScene().name.Equals("Game 2"))
         {
             explosionRadius = 1;
             bombAmount = 1;
             bombsRemaining = bombAmount;
-         //  Debug.Log("reamain: " + bombsRemaining);
+            //  Debug.Log("reamain: " + bombsRemaining);
 
         }
 
+    }
+
+    private void Update()
+    {
+        if (SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            floatSO.Bomb = bombAmount;
+            floatSO.Radius = explosionRadius;
+        }
     }
 
 
@@ -127,11 +158,10 @@ public class BombController : MonoBehaviour
         AudioManager.Play(AudioName.BombExplode);
 
         Destroy(bomb.gameObject);
-       Debug.Log("Bom no");
         bombsRemaining++;
     }
 
-  
+
     private void Explode(Vector2 position, Vector2 direction, int length)
     {
         if (length <= 0)
@@ -152,11 +182,11 @@ public class BombController : MonoBehaviour
         explosion.SetActiveRenderer(length > 1 ? explosion.middle : explosion.end);
         explosion.SetDirection(direction);
         explosion.DestroyAfter(explosionDuration);
-      
+
 
         Explode(position, direction, length - 1);
 
-        
+
     }
 
     private void ClearBricks(Vector2 position)

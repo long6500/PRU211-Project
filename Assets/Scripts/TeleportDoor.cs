@@ -24,7 +24,8 @@ public class TeleportDoor : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Teleport!!!");
+        //Debug.Log("Teleport!!!");
+       
         if (collision.CompareTag("Player"))
         {
             collision.transform.position = new Vector2(tran.position.x + 1, tran.position.y);

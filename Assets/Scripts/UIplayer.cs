@@ -8,7 +8,8 @@ public class UIplayer : MonoBehaviour
  //   private int liveValue;
     Text liveUI;
     PlayerController playerController;
-    
+    //FloatSO floatSO;
+
 
     // Start is called before the first frame update
     void Start()
@@ -23,9 +24,12 @@ public class UIplayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       // Debug.Log("live value update : " + liveValue);
+        // Debug.Log("live value update : " + liveValue);
 
-      //  liveValue = PlayerPrefs.GetInt("live");
+        //  liveValue = PlayerPrefs.GetInt("live");
         liveUI.text = ": " + playerController.liveValue;
+        //liveUI.text = ": " + floatSO.Live;
+
+
     }
 }

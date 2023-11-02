@@ -18,7 +18,6 @@ public class GameAudioSource : MonoBehaviour
             AudioManager.Initialize(audioSource);
             DontDestroyOnLoad(gameObject);
 
-            Debug.Log("khoi tao Audio Source");
         }
         else
         {

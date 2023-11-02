@@ -8,6 +8,7 @@ public class UISpeed : MonoBehaviour
    // private float liveValue;
     Text liveUI;
     PlayerController PlayerController;
+    //FloatSO floatSO;
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +21,9 @@ public class UISpeed : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       // liveValue = PlayerPrefs.GetFloat("speed");
+        // liveValue = PlayerPrefs.GetFloat("speed");
         liveUI.text = ": " + PlayerController.moveSpeed;
+        //liveUI.text = ": " + floatSO.MoveSpeed;
+
     }
 }

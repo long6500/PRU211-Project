@@ -8,40 +8,44 @@ public class GameManager : MonoBehaviour
 
     PlayerController playerController;
     BombController bombController;
+    static bool init = false;
+
+    public bool nextGame = false;
+
+    public static bool Init { get => init; set => init = value; }
+
+    void Awake()
+    {
+        // Prevent the GameObject from being destroyed on scene changes
+        if (!GameManager.Init)
+        {
+            init = true;
+            DontDestroyOnLoad(gameObject);
+
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
 
 
     private void Start()
     {
-        playerController = FindObjectOfType<PlayerController>();    
+        playerController = FindObjectOfType<PlayerController>();
         bombController = FindObjectOfType<BombController>();
     }
     public void CheckGameState()
     {
-        //int aliveCount = 0;
-
-        //foreach (GameObject player in players)
-        //{
-        //    if (player.activeSelf)
-        //    {
-        //        aliveCount++;
-        //    }
-        //}
-
-        //if (aliveCount <= 1)
-        //{
-        //    Invoke(nameof(NewRound), 3f);
-        //}
+        PlayerPrefs.DeleteAll();
 
         if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0)
         {
-            PlayerPrefs.SetInt("live", playerController.liveValue);
-            PlayerPrefs.SetFloat("speed", playerController.moveSpeed);
-            PlayerPrefs.SetInt("radius", bombController.explosionRadius);
-            PlayerPrefs.SetInt("bomb", bombController.bombAmount);
-
-            //Debug.Log("current lives: " + playerController.liveValue);
-            //Debug.Log("current speed: " + playerController.moveSpeed);
+            //PlayerPrefs.SetInt("live", playerController.liveValue);
+            //PlayerPrefs.SetFloat("speed", playerController.moveSpeed);
+            //PlayerPrefs.SetInt("radius", bombController.explosionRadius);
+            //PlayerPrefs.SetInt("bomb", bombController.bombAmount);
 
             Invoke(nameof(NextRound), 0.5f);
         }
@@ -66,8 +70,20 @@ public class GameManager : MonoBehaviour
 
     private void NextRound()
     {
-        
+        if (SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            nextGame = true;
+            
+        }
+        else
+        {
+            nextGame = false;
+
+        }
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
     }
+
+
+
 }

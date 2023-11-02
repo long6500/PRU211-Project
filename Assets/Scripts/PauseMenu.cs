@@ -9,6 +9,7 @@ public class PauseMenu : MonoBehaviour
    // public Button yourButton;
 
     public GameObject pauseMenuUI;
+    GameManager manager;
 
     public void Resume()
     {
@@ -40,6 +41,10 @@ public class PauseMenu : MonoBehaviour
     public void LoadMenu()
     {
         Time.timeScale = 1.0f;
+
+        manager = FindObjectOfType<GameManager>();
+        manager.nextGame = false;
+        PlayerPrefs.DeleteAll();
 
         SceneManager.LoadScene("MainMenu");
     }

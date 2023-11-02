@@ -30,7 +30,6 @@ public class EnemyMultiDirection : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-         Debug.Log("COLLIDE");
         if (collision.CompareTag("Bricks") || collision.CompareTag("Indestructibles") || collision.CompareTag("Bomb"))
         {
           //  dirX *= -1f;
@@ -59,13 +58,12 @@ public class EnemyMultiDirection : MonoBehaviour
                 }
             }
 
-            Debug.Log("X:" + dirX);
-            Debug.Log("Y:" + dirY);
+          
 
             Vector2 position = gameObject.transform.position;
 
-            position.x = Mathf.Round(position.x);
-            position.y = Mathf.Round(position.y);
+            //position.x = Mathf.Round(position.x);
+            //position.y = Mathf.Round(position.y);
 
             transform.position = position;
 
